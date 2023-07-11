@@ -1,12 +1,18 @@
 version: '3'
 services:
   e-mongodb:
+    container_name: e-mongodb
     image: mongo
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: hehe
     ports:
       - "27017:27017"
     volumes:
       - ./data-mongodb:/data/db
+  e-mongo-express:
+    container_name: e-mongo-express
+    image: mongo-express
+    restart: always
+    environment:
+      ME_CONFIG_MONGODB_SERVER: e-mongodb
+    ports:
+      - "8089:8081"

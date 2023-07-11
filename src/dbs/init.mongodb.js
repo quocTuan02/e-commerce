@@ -11,13 +11,13 @@ class Database {
         this.connect()
     }
 
-    connect(type = 'mongodb') {
+    connect() {
         mongoose.connect(connectString, {
             maxPoolSize: 50,
             useNewUrlParser: true,
             useUnifiedTopology: true,
             // auth: {
-            //     username: 'db.username',
+            //     username: db.username,
             //     password: db.password,
             // }
         }).then(_ => {
