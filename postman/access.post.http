@@ -1,10 +1,27 @@
-### signup
-POST {{url_dev}}/shop/signup
+POST http://localhost:25114/Booongo/api/v1
 Content-Type: application/json
-x-api-key: de37d349c05e7c9a23bc9d4de8f97e7b23417b2bfa18c99dbeb0f4f94a85e7dca1d6a28f44e7dc374449977dd7c6c7172a0b5b0e99b03e2a751230bac0e79ffb
 
 {
-  "name": "Shop Hehe",
-  "email": "hehe02@gmail.com",
-  "password": "abc123"
+  "name": "transaction",
+  "uid": "9542f972e16b11e5b52c0242ac110010",
+  "timestamp": "2022-01-16T22:25:02+00:00",
+  "session": "4db895f0e0c911e58ac80242ac110009",
+  "args": {
+    "rounds": [
+      3000123
+    ],
+    "freebet_id": null,
+    "win": 50000,
+    "bet": 30000,
+    "token": "97a400c8964311ed9ca74ee79e92309e",
+    "game": "green_chilli",
+    "round_started": true,
+    "round_finished": false,
+    "award_id": null,
+    "player": {
+      "id": "cittestapmp77",
+      "nick": "John",
+      "currency": "KRW"
+    }
+  }
 }

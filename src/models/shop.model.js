@@ -37,5 +37,5 @@ const shopSchema = new mongoose.Schema({
 })
 
 // Create and export the model
-const shop = mongoose.model(DOCUMENT_NAME, shopSchema)
-module.exports = shop;
+const shopModel = mongoose.model(DOCUMENT_NAME, shopSchema)
+module.exports = shopModel;

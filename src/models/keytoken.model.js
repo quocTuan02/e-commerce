@@ -15,12 +15,18 @@ const keyTokenSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    refreshToken: {
-        type: Array,
+    refreshTokenUsed: {
+        type: Array, // Những RT đã được sử dụng
         default: []
+    },
+    refreshToken: {
+        type: String,
+        required: true,
     }
 }, {
     timestamps: true,
     collection: COLLECTION_NAME
 })
-module.exports = mongoose.model(DOCUMENT_NAME, keyTokenSchema)
+
+const keyToken = mongoose.model(DOCUMENT_NAME, keyTokenSchema)
+module.exports = keyToken
