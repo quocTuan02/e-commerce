@@ -15,7 +15,13 @@ const keyTokenSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    refreshTokenUsed: {
+    privateKey: {
+        // TODO: ???
+        type: String,
+        required: true,
+        default: ''
+    },
+    refreshTokensUsed: {
         type: Array, // Những RT đã được sử dụng
         default: []
     },
@@ -28,5 +34,5 @@ const keyTokenSchema = new mongoose.Schema({
     collection: COLLECTION_NAME
 })
 
-const keyToken = mongoose.model(DOCUMENT_NAME, keyTokenSchema)
-module.exports = keyToken
+const keyTokenModel = mongoose.model(DOCUMENT_NAME, keyTokenSchema)
+module.exports = keyTokenModel

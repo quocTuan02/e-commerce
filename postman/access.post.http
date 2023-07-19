@@ -1,27 +1,28 @@
-POST http://localhost:25114/Booongo/api/v1
+### Signup
+POST {{url_dev}}/shop/signup
 Content-Type: application/json
+x-api-key: de37d349c05e7c9a23bc9d4de8f97e7b23417b2bfa18c99dbeb0f4f94a85e7dca1d6a28f44e7dc374449977dd7c6c7172a0b5b0e99b03e2a751230bac0e79ffb
 
 {
-  "name": "transaction",
-  "uid": "9542f972e16b11e5b52c0242ac110010",
-  "timestamp": "2022-01-16T22:25:02+00:00",
-  "session": "4db895f0e0c911e58ac80242ac110009",
-  "args": {
-    "rounds": [
-      3000123
-    ],
-    "freebet_id": null,
-    "win": 50000,
-    "bet": 30000,
-    "token": "97a400c8964311ed9ca74ee79e92309e",
-    "game": "green_chilli",
-    "round_started": true,
-    "round_finished": false,
-    "award_id": null,
-    "player": {
-      "id": "cittestapmp77",
-      "nick": "John",
-      "currency": "KRW"
-    }
-  }
+  "name": "HEHE SHOP",
+  "email": "hehe@yopmail.com",
+  "password": "abc123"
 }
+
+### Login
+POST {{url_dev}}/shop/login
+Content-Type: application/json
+x-api-key: de37d349c05e7c9a23bc9d4de8f97e7b23417b2bfa18c99dbeb0f4f94a85e7dca1d6a28f44e7dc374449977dd7c6c7172a0b5b0e99b03e2a751230bac0e79ffb
+
+{
+  "email": "hehe@yopmail.com",
+  "password": "abc123"
+}
+
+### Logout
+POST {{url_dev}}/shop/logout
+Content-Type: application/json
+x-api-key: de37d349c05e7c9a23bc9d4de8f97e7b23417b2bfa18c99dbeb0f4f94a85e7dca1d6a28f44e7dc374449977dd7c6c7172a0b5b0e99b03e2a751230bac0e79ffb
+x-client-id: 64b7529b9eec23fea22df627
+authorization: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGI3NTI5YjllZWMyM2ZlYTIyZGY2MjciLCJlbWFpbCI6ImhlaGVAeW9wbWFpbC5jb20iLCJpYXQiOjE2ODk3NTkzNzAsImV4cCI6MTY5MDM2NDE3MH0.cveTapaIOXARI4dwHMVu1SYUTkygRfdOTWBzwI8hskrWKSsMmAxe3HOiDXxk8bURnnsv3j3SGEJds6hQ42NxeAgLnTvD9dCj_w3bR8-nTtjRtwI-jGRf2--cMMwNxscIqhVQJfLqYrlb93t5bcSc-dfJC2e4nu7Dn9VU7XFfgfQwPi73c1lI-2OAS6_Ib2BU3OuqK4ANb5PuKXbbVbKuQ6KMk8_k_NRMPefvbYG5wJ2nT0wAHQmvrWJauGOuxmjXu5_rR0yYj8czlQBuXuL0Cvd3mBYmL-m-vfPEbscV5rZzcxTKKJpaOBJLM69_ygYLHEX3_xjJbhv8xKwlTXSPK4NuYnagFejoiY4D35OjB6B3lTNfgEX0Jh-JLOHIZGSy-er34DJWcDUsa6ZQ_5aG_51b56Tchs6x9kk2lD5unhEmE-f5hvZH7gh_OmuZ8nNJKLBs3ThQSmbqfLkwrOqAvP77kMSQ6BuGGED-nKgHI5lQTg9BFIRktbQWUmeG7INSkW3mLuPgMs2_vTZb75sz18S9fb2dBySJWJTR4qUjNyysChL5RRYtD9CJoGKKuabR_AD_O3TnEJuPYRT2_l5ndSZLlnOHvvDi3vfs3w3TMET6unIGkXjFeT8Z1bivrqkbQS7Gly9PdgUCtY-wtY0miTajlLiIWimzoXmUeH9RW4s
+
